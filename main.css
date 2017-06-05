@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.switcher {
+  display: none;
+}
+
+.cute-class {
+  font-family: 'Enriqueta', cursive;
+  color: #3F5060;
+  background-color: #CCCCFF;
+}
+
+.nature-class {
+  font-family: 'Leckerli One', cursive;
+  color: #878A6F;
+  background-color: #E5EEAD;
+}
+
+.pizza-class {
+  font-family: 'Leckerli One', cursive;
+  background: url(https://emojipedia-us.s3.amazonaws.com/cache/c9/0f/c90ff0f477d10b79127834d190c627fd.png);
+}
+
+.todo {
+  font-size: 1.2em;
+  padding: 0em 6em;
+}
+
+.container {
+  padding: 1em 2em;
+}
+
+.sidebar {
+  display: block;
+  text-align: left;
+  padding: .2em 0em;
+  float: none;
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  width: 100%;
+  display: block;
+  padding: .5em 1em;
+  text-align: left;
+  border: none;
+  outline: none;
+  white-space: normal;
+  float: none;
+  text-decoration: none;
+  color: black;
+}
+
+#sidebar-links {
+  padding: .5em 1em;
+  font-size: .8em;
+}
+
+#hamburger-menu {
+  padding: .5em 1em;
+  display:relative;
+  text-decoration: none;
+  color:black;
+  font-family: monospace;
+}
+
+#sidebarOpen {
+  color: black;
+}
+
+a:hover {
+  background-color: lightblue;
+  width: 30%
+}
+
+/* Remove margins and padding from the list */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.nature-class ul li:nth-child(odd) {
+  background: #E6E5E0;
+}
+
+.nature-class span {
+  color: #FBAFA2;
+}
+
+/* Darker background-color on hover */
+
+ul li:hover {
+  background: #ddd;
+}
+
+.nature-class ul li:hover {
+  background: #FBAFA2;
+}
+
+/* When clicked on, add a background color and strike out text */
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+/* Style the header */
+
+.header {
+  background-color: lightblue;
+  padding: 1em 4em;
+  color: white;
+  text-align: center;
+}
+
+.nature-class .header {
+  background-color: #878A6F;
+  color: #D4ECDF;
+}
+
+/* Clear floats after the header */
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+
+.add-todo {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.nature-class .add-todo {
+  background: #D4ECDF;
+  color: #878A6F;
+}
+
+.add-todo:hover {
+  background-color: #bbb;
+}
+
+.nature-class .add-todo:hover {
+  background-color: #FBAFA2;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: .7em;
+  }
+
+  input {
+    font-size: .7em
+  }
+
+  .add-todo {
+    padding: 6.5px
+  }
+
+  nav {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1224px) {
+
+  .container {
+    padding: 1em 10em;
+  }
+
+}
