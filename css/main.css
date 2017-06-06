@@ -23,7 +23,11 @@ h1 {
 
 .nature-class {
   font-family: 'Lobster Two', cursive;
-  color: #878A6F;
+  color: white;
+  background: url(https://user-images.githubusercontent.com/13243031/26836819-e0554566-4aa9-11e7-87e1-c160e5c8e398.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #E5EEAD;
 }
 
@@ -81,16 +85,12 @@ footer p {
   color: black;
 }
 
-nav a:hover {
-  background-color: lightblue;
+.nature-class .sidebar {
+  color:white;
 }
 
-.cookie-class nav a:hover {
-  background-color: #FBCFCF;
-}
-
-.cute-class nav a:hover {
-  background-color: #DCEDC2;
+.nature-class #hamburger-menu {
+  color: white;
 }
 /* Remove margins and padding from the list */
 
@@ -122,6 +122,11 @@ ul li {
   background: #DCEDC2;    
 }
 
+.nature-class ul li {
+  background: #2c2b4b;    
+}
+
+
 
 /* Set all odd list items to a different color (zebra-stripes) */
 
@@ -138,11 +143,11 @@ ul li:nth-child(odd) {
 }
 
 .nature-class ul li:nth-child(odd) {
-  background: #E6E5E0;
+  background: #333333;
 }
 
 .nature-class span {
-  color: #FBAFA2;
+  color: #9ddacb;
 }
 
 /* Darker background-color on hover */
@@ -160,7 +165,7 @@ ul li:hover {
 }
 
 .nature-class ul li:hover {
-  background: #FBAFA2;
+  background: #a75293;
 }
 
 /* When clicked on, add a background color and strike out text */
@@ -186,7 +191,7 @@ ul li.checked {
 }
 
 .nature-class .header {
-  background-color: #878A6F;
+  background-color: #2c2b4b;
   color: #D4ECDF;
 }
 
@@ -248,6 +253,10 @@ input {
   background-color: #FBAFA2;
 }
 
+.nature-class .add-todo:hover {
+  background-color: #f8dcb4;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: .7em;
@@ -274,6 +283,14 @@ input {
 
   .container {
     padding: 1em 10em;
+  }
+
+}
+
+@media (min-width: 2000px) {
+
+  .container {
+    padding: 1em 20em;
   }
 
 }
