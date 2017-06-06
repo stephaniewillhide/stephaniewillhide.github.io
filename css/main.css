@@ -16,20 +16,21 @@ h1 {
 }
 
 .cute-class {
-  font-family: 'Enriqueta', cursive;
-  color: #3F5060;
-  background-color: #CCCCFF;
+  font-family: 'Vibur', cursive;
+  color: #555152;
+  background-color: #EFFFCD;
 }
 
 .nature-class {
-  font-family: 'Leckerli One', cursive;
+  font-family: 'Lobster Two', cursive;
   color: #878A6F;
   background-color: #E5EEAD;
 }
 
-.pizza-class {
-  font-family: 'Leckerli One', cursive;
+.cookie-class {
+  font-family: 'Patua One', cursive;
   background: url(https://emojipedia-us.s3.amazonaws.com/cache/c9/0f/c90ff0f477d10b79127834d190c627fd.png);
+  color: #755C3B;
 }
 
 .todo {
@@ -70,9 +71,9 @@ footer p {
 
 #hamburger-menu {
   padding: .5em 1em;
-  display:relative;
+  display: relative;
   text-decoration: none;
-  color:black;
+  color: black;
   font-family: monospace;
 }
 
@@ -84,6 +85,9 @@ nav a:hover {
   background-color: lightblue;
 }
 
+.cookie-class nav a:hover {
+  background-color: #FBCFCF;
+}
 /* Remove margins and padding from the list */
 
 ul {
@@ -106,10 +110,27 @@ ul li {
   user-select: none;
 }
 
+.cookie-class ul li {
+  background: #FCFBE3;    
+}
+
+/*.cookie-class ul li::before { 
+  list-style-image: url('https://emojipedia-us.s3.amazonaws.com/cache/c9/0f/c90ff0f477d10b79127834d190c627fd.png');
+}*/
+
+.cookie-class li {
+  background: url('https://emojipedia-us.s3.amazonaws.com/cache/c9/0f/c90ff0f477d10b79127834d190c627fd.png') no-repeat left;
+}
+
+
 /* Set all odd list items to a different color (zebra-stripes) */
 
 ul li:nth-child(odd) {
   background: #f9f9f9;
+}
+
+.cookie-class ul li:nth-child(odd) {
+  background: #CDBB99;
 }
 
 .nature-class ul li:nth-child(odd) {
@@ -124,6 +145,10 @@ ul li:nth-child(odd) {
 
 ul li:hover {
   background: #ddd;
+}
+
+.cookie-class ul li:hover {
+  background: #FBCFCF;
 }
 
 .nature-class ul li:hover {
@@ -145,6 +170,11 @@ ul li.checked {
   padding: 1em 4em;
   color: white;
   text-align: center;
+}
+
+.cookie-class .header {
+  background-color: #A37E58;
+  color: #FCFBE3;
 }
 
 .nature-class .header {
@@ -180,6 +210,11 @@ input {
   text-align: center;
   font-size: 16px;
   border: none;
+}
+
+.cookie-class .add-todo {
+  background: #755C3B;
+  color: #FBCFCF;
 }
 
 .nature-class .add-todo {

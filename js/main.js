@@ -4,12 +4,16 @@ function switchCute() {
   $('body').attr('class', 'cute-class');
 }
 
-function switchPizza() {
-  $('body').attr('class', 'pizza-class');
+function switchCookie() {
+  $('body').attr('class', 'cookie-class');
 }
 
 function switchNature() {
   $('body').attr('class', 'nature-class');
+}
+
+function switchRegular() {
+  location.reload();
 }
 
 // wait for the page to load before event handlers
@@ -24,9 +28,11 @@ $(document).ready(function () {
 
   $('#cute').click(switchCute);
 
-  $('#pizza').click(switchPizza);
+  $('#cookie').click(switchCookie);
 
   $('#nature').click(switchNature);
+
+  $('#regular').click(switchRegular)
 
 // navigation functionality
 
