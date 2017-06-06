@@ -18,7 +18,7 @@ h1 {
 .cute-class {
   font-family: 'Vibur', cursive;
   color: #555152;
-  background-color: #EFFFCD;
+  background-color: #A8E6CE;
 }
 
 .nature-class {
@@ -88,6 +88,10 @@ nav a:hover {
 .cookie-class nav a:hover {
   background-color: #FBCFCF;
 }
+
+.cute-class nav a:hover {
+  background-color: #DCEDC2;
+}
 /* Remove margins and padding from the list */
 
 ul {
@@ -114,12 +118,8 @@ ul li {
   background: #FCFBE3;    
 }
 
-/*.cookie-class ul li::before { 
-  list-style-image: url('https://emojipedia-us.s3.amazonaws.com/cache/c9/0f/c90ff0f477d10b79127834d190c627fd.png');
-}*/
-
-.cookie-class li {
-  background: url('https://emojipedia-us.s3.amazonaws.com/cache/c9/0f/c90ff0f477d10b79127834d190c627fd.png') no-repeat left;
+.cute-class ul li {
+  background: #DCEDC2;    
 }
 
 
@@ -127,6 +127,10 @@ ul li {
 
 ul li:nth-child(odd) {
   background: #f9f9f9;
+}
+
+.cute-class ul li:nth-child(odd) {
+  background: #DCEDC2;
 }
 
 .cookie-class ul li:nth-child(odd) {
@@ -145,6 +149,10 @@ ul li:nth-child(odd) {
 
 ul li:hover {
   background: #ddd;
+}
+
+.cute-class ul li:hover {
+  background: #A8E6CE;
 }
 
 .cookie-class ul li:hover {
@@ -180,6 +188,11 @@ ul li.checked {
 .nature-class .header {
   background-color: #878A6F;
   color: #D4ECDF;
+}
+
+.cute-class .header {
+  background-color: #FF8C94;
+  color: white;
 }
 
 /* Clear floats after the header */
@@ -220,6 +233,11 @@ input {
 .nature-class .add-todo {
   background: #D4ECDF;
   color: #878A6F;
+}
+
+.cute-class .add-todo {
+  background: #FFD3B5;
+  color: #555152;
 }
 
 .add-todo:hover {
